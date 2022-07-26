@@ -17,17 +17,17 @@ body{
 }
 
 #image-desktop2{
-  height: 22rem;
+  height: 22em;
 }
 #image-mobile2{
   display: none;
 }
 #image2{
-  height: 22rem;
+  height: 22em;
 }
 #desc2{
-  height: 22rem;
-  width: 15rem;
+  height: 22em;
+  width: 15em;
   background-color: hsl(0, 0%, 100%);
   padding: 0 1.5rem;
   margin: 0 0 0 -1rem;
