@@ -9,31 +9,30 @@ body{
   padding: 0;
   font-family: "Montserrat", "Fraunces";
 }
-.grid{
-  display: grid;
-  grid-template-columns: 15.9rem 15.9rem;
-  grid-auto-rows: minmax(15rem, 1fr);
-  grid-template-areas:
-  "image desc";
+.grid2{
+  display: flex;
+  flex-direction: row;
   border-radius: 1rem;
+  overflow: hidden;
 }
-#image{
-  grid-area: image;
-  display: inline-block;
+
+#image-desktop2{
+  height: 22rem;
 }
-#desc{
-  grid-area: desc;
+#image-mobile2{
+  display: none;
+}
+#image2{
+  height: 22rem;
+}
+#desc2{
+  height: 22rem;
+  width: 15rem;
   background-color: hsl(0, 0%, 100%);
   padding: 0 1.5rem;
   margin: 0 0 0 -1rem;
 }
-#image-desktop{
-  height: 23rem;
-}
-#image-mobile{
-  display: none
-}
-#button{
+#button2{
   background-color: hsl(158, 36%, 37%);
   border-radius: 0.5rem;
   border: none;
@@ -43,7 +42,7 @@ body{
   margin: 0 0.2rem 1rem 0;
   font-family: "Montserrat";
 }
-#button i{
+#button2 i{
   padding: 0 0.5rem 0 0;
 }
 h2{
@@ -56,14 +55,14 @@ h4{
   font-size: 0.65rem;
   margin: 1.5rem 0 0 0;
 }
-#current-price{
+#current-price2{
   font-size: 1.5rem;
   color: hsl(158, 36%, 37%);
   margin: 1.2rem 0;
   font-weight: 700;
   font-family: "Fraunces";
 }
-#old-price{
+#old-price2{
   color: hsl(228, 12%, 48%);
   font-size: 0.8rem;
   padding: 0 0 0 1.5rem;
@@ -75,36 +74,28 @@ p{
   margin: 1.2rem 0;
 }
 @media only screen and (max-width: 500px){
-  .grid{
-    grid-template-columns: 22rem;
-    grid-template-rows: 18rem 23rem;
-    grid-template-areas:
-    "image"
-    "desc";
-    margin: 2rem 0 0 0;
+  .grid2{
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    margin: 10em 0 0 0;
   }
-  #image-mobile{
-    grid-area: image;
-    display: inline-block;
-    width: 22rem;
-    height: 20rem;
+  #image2{
+    height: 15rem;
+    width: 18rem;
     object-fit: cover;
+    ;
   }
-  #desc{
-    grid-area: desc;
-    background-color: hsl(0, 0%, 100%);
-    padding: 0 1.5rem;
-    margin: 0 0 0 0;
+  #image-mobile2{
+    height: 15rem;
+    width: 18rem;
+    display: block;
   }
-  #image-desktop{
+  #image-desktop2{
     display: none;
   }
-  #desc{
-    grid-area: desc;
+  #desc2{
+    height: 22rem;
     margin: 0 0 0 0;
-  }
-  #button{
-    width: 19rem;
-    font-family: "Montserrat";
   }
 }
