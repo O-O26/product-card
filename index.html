@@ -1,36 +1,36 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="product-card.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://kit.fontawesome.com/1c8eae70f0.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Merriweather&family=Montserrat:wght@500;700&family=Noto+Sans:wght@300;400&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="grid">
-    <div id="image">
-      <img src="data:image/jpeg;base64,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" alt="perfume"
-      id="image-desktop">
-      <img src="https://lh3.googleusercontent.com/84Rm2ZPhkOolqPW_ZZFh2syPjBKlsgSkT2VxbstgZAFXG0GoLR63cXlMj7mJSRJGbuU96A=s43" alt="perfume"
-      id="image-mobile">
+<!DOCTYPE html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product-card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1c8eae70f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Merriweather&family=Montserrat:wght@500;700&family=Noto+Sans:wght@300;400&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid2">
+      <div id="image2">
+        <img src="/image-product-desktop.jpg" alt="perfume"
+        id="image-desktop2">
+        <img src="/image-product-mobile.jpg" alt="perfume"
+        id="image-mobile2">
+      </div>
+      <div id="desc2">
+        <h4>PERFUME</h4>
+        <h2>Gabrielle <br> Essence Eau <br> De Parfum</h2>
+        <p>A floral, solar and voluptuous interpretation composed by
+          Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <p id="current-price2">$149.99
+        <span id="old-price2"><del>$169.99</del></span> </p>
+        <button type="submit" id="button2">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Add to Cart</button>
+      </div>
     </div>
-    <div id="desc">
-      <h4>PERFUME</h4>
-      <h2>Gabrielle <br> Essence Eau <br> De Parfum</h2>
-      <p>A floral, solar and voluptuous interpretation composed by
-        Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
-      <p id="current-price">$149.99
-      <span id="old-price"><del>$169.99</del></span> </p>
-      <button type="submit" id="button">
-        <i class="fa-solid fa-cart-shopping"></i>
-        Add to Cart</button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
